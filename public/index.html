@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voting App</title>
+  </head>
+  <body>
+    <h1>Welcome to the Voting App</h1>
+    <form id="new-session-form">
+      <label for="session-code">Session Code:</label>
+      <input type="text" id="session-code" name="session-code" required />
+      <button type="submit">Create New Session</button>
+    </form>
+    <div id="name-form-container" style="display: none">
+      <h2>Enter Your Name:</h2>
+      <form id="name-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <button type="submit">Join Session</button>
+      </form>
+    </div>
+    <div id="voting-form-container" style="display: none">
+      <h2>Vote for the Story</h2>
+      <form id="vote-form" onSubmit="{handleSubmit}">
+        <label for="points">Points:</label>
+        <select id="points" name="points">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="8">8</option>
+          <option value="13">13</option>
+          <option value="20">20</option>
+          <option value="40">40</option>
+          <option value="100">100</option>
+        </select>
+        <button type="submit">Submit Vote</button>
+      </form>
+    </div>
+    <div id="participants-list" style="display: none">
+      <h2>Participants:</h2>
+      <ul id="participants"></ul>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
