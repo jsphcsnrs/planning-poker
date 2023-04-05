@@ -1,0 +1,23 @@
+{
+  "name": "planning-poker-app",
+  "version": "1.0.0",
+  "description": "web app for agile planning poker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test nospecified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsphcsnrs/planning-poker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsphcsnrs/planning-poker/issues"
+  },
+  "homepage": "https://github.com/jsphcsnrs/planning-poker#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}
